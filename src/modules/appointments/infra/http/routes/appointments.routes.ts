@@ -4,7 +4,7 @@ import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAut
 import AppointmentsController from '../controllers/AppointmentsController';
 
 const appointmentsRouter = Router();
-const aapointmentsController = new AppointmentsController();
+const apointmentsController = new AppointmentsController();
 
 appointmentsRouter.use(ensureAuthenticated);
 // executa o middleware ensureAuthenticated toda vez que uma requisição é realizada para o caminho /appointments.
@@ -15,6 +15,6 @@ appointmentsRouter.use(ensureAuthenticated);
 //   return response.json(appointments);
 // });
 
-appointmentsRouter.post('/', aapointmentsController.create);
+appointmentsRouter.post('/', apointmentsController.create);
 
 export default appointmentsRouter;
