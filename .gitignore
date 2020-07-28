@@ -1,7 +1,9 @@
 .vscode
-node_modules
-.env
 coverage
+node_modules
+dist
+
+.env
 ormconfig.json
 
 tmp/*
