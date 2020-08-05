@@ -22,14 +22,10 @@ Intalação dos seguntes softwares:
 - [Insomnia Core](https://insomnia.rest/download/)
 
 2. Bases de dados
-- Docker
-- PostgreSQL
-- MongoDB
-- Redis
+- [Docker](https://docs.docker.com/get-docker/)
 
 ### Instalando
 1. Base de dados
-Instalar o  docker ([clique aqui](https://docs.docker.com/get-docker/)).
 
 Após a instalação e configuração do docker, baixar as seguintes imagens:
 - PostgreSQL
