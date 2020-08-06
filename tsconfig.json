@@ -20,6 +20,7 @@
   },
   "exclude": [
     "./jest.config.js",
-    "./coverage"
+    "./coverage",
+    "babel.config.js"
   ]
 }

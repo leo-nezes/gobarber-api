@@ -1,8 +1,4 @@
 <h1 align="center">
-  🚧 Documentação em desenvolvimento 🚧
-</h1>
-
-<h1 align="center">
   Gobarber API
 </h1>
 
@@ -15,6 +11,7 @@ As instruções abaixo vão orientá-lo a copiar o projeto e executar na sua má
 ### 1. Pré-requisitos
 
 Intalação dos seguntes softwares:
+
 1.1 Ambiente
 - [NodeJS](https://nodejs.org/en/download/)
 - [NPM](https://www.npmjs.com/get-npm)
@@ -46,10 +43,6 @@ Criar base de dados no PostgreSQL e no MongoDB com o nome **gobarber**.
 
 2.2 Aplicação
 
-Utilizando o VSCode, ir no diretório da aplicação e baixar as dependências de desenvolvimento:
-
-`$ yarn`
-
 Baixar as seguintes dependências para o VSCode:
 
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
@@ -57,9 +50,15 @@ Baixar as seguintes dependências para o VSCode:
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-Criar um arquivo **.env** e adicionar as configurações que estão no arquivo **.env.example**. Porem, os parâmetros para o Redis devem estar de acordo com as configurações de instalação do Redis na sua máquina.
+Utilizando o VSCode, ir no diretório da aplicação e baixar as dependências de desenvolvimento:
 
-### 3. Executando ambiente
+`$ yarn`
+
+Criar um arquivo **.env** e adicionar as configurações que estão no arquivo **.env.example**. Os parâmetros de conexão do Redis devem estar de acordo com as configurações de instalação da sua máquina.
+
+Procurar algum serviço de criptografia _MD5_ online e gerar uma chave única. Essa chave deve ser adicionanda à variável **APP_SECRET** do arquivo **.env** criado.
+
+### 3. Executando aplicação
 
 Executar as três base de dados instalados no docker
 
