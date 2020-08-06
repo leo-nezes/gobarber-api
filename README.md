@@ -2,18 +2,20 @@
   🚧 Documentação em desenvolvimento 🚧
 </h1>
 
-# Gobarber API
+<h1 align="center">
+  Gobarber API
+</h1>
 
 O Gobarber API é uma aplicação completa desenvolvida em Javascript para realizar cadastro de usuários e provedores de serviços, marcação e consulta de agendamentos.
 
 ## Iniciando
 
-As instruções abixo vão orientá-lo a copiar o projeto e executar na sua máquina local para fins de desenvolvimento e testes.
+As instruções abaixo vão orientá-lo a copiar o projeto e executar na sua máquina local para fins de desenvolvimento e testes.
 
-### Pré-requisitos
+### 1. Pré-requisitos
 
 Intalação dos seguntes softwares:
-1. Ambiente
+1.1 Ambiente
 - [NodeJS](https://nodejs.org/en/download/)
 - [NPM](https://www.npmjs.com/get-npm)
 - [Yarn](https://yarnpkg.com/getting-started/install)
@@ -21,11 +23,11 @@ Intalação dos seguntes softwares:
 - [VSCode](https://code.visualstudio.com/download)
 - [Insomnia Core](https://insomnia.rest/download/)
 
-2. Bases de dados
+1.2 Bases de dados
 - [Docker](https://docs.docker.com/get-docker/)
 
-### Instalando
-1. Base de dados
+### 2. Configurando ambiente
+2.1 Base de dados
 
 Após a instalação e configuração do docker, baixar as seguintes imagens:
 - PostgreSQL
@@ -40,7 +42,9 @@ Após a instalação e configuração do docker, baixar as seguintes imagens:
 
 `$ docker run --name redis -p 6379:6379 -d -t redis:alpine`
 
-2. Aplicação
+Criar base de dados no PostgreSQL e no MongoDB com o nome **gobarber**.
+
+2.2 Aplicação
 
 Utilizando o VSCode, ir no diretório da aplicação e baixar as dependências de desenvolvimento:
 
@@ -54,3 +58,11 @@ Baixar as seguintes dependências para o VSCode:
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 Criar um arquivo **.env** e adicionar as configurações que estão no arquivo **.env.example**. Porem, os parâmetros para o Redis devem estar de acordo com as configurações de instalação do Redis na sua máquina.
+
+### 3. Executando ambiente
+
+Executar as três base de dados instalados no docker
+
+Executar a aplicação node:
+
+`$ yarn dev:server`
