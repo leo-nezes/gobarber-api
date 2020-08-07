@@ -43,7 +43,7 @@ Criar base de dados no PostgreSQL e no MongoDB com o nome **gobarber**.
 
 2.2 Aplicação
 
-Baixar as seguintes dependências para o VSCode:
+Baixar as seguintes extensões para o VSCode:
 
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
